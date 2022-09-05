@@ -1,0 +1,491 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+        integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="./style.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" referrerpolicy="no-referrer">
+    </script>
+    <script src="./script.js"></script>
+    <title>대전시립박물관 반응형 리뉴얼 사이트</title>
+</head>
+
+<body>
+    <div id="wrap">
+        <header>
+            <h1 class="logo"><a href="#"><img src="./images/logo.png" alt="대전시립박물관 로고"></a></h1>
+            <nav>
+                <ul class="gnb">
+                    <li class="top_menu">
+                        <a href="#">박물관이용</a>
+                        <ul class="sub">
+                            <li><a href="#">관람안내</a></li>
+                            <li><a href="#">전시해설</a></li>
+                            <li><a href="#">시설안내</a></li>
+                            <li><a href="#">예약안내</a></li>
+                            <li><a href="#">시설대관예약</a></li>
+                            <li><a href="#">오시는길</a></li>
+                        </ul>
+                    </li>
+                    <li class="top_menu">
+                        <a href="#">전시</a>
+                        <ul class="sub on">
+                            <li><a href="#">상설전시</a></li>
+                            <li><a href="#">특별전시</a></li>
+                            <li><a href="#">야외전시</a></li>
+                            <li><a href="#">대전근현대사전시관</a></li>
+                        </ul>
+                    </li>
+                    <li class="top_menu">
+                        <a href="#">교육ㆍ공연</a>
+                        <ul class="sub">
+                            <li><a href="#">교육안내</a></li>
+                            <li><a href="#">교육ㆍ공연 신청</a></li>
+                            <li><a href="#">교육자료</a></li>
+                        </ul>
+                    </li>
+                    <li class="top_menu">
+                        <a href="#">유물정보</a>
+                        <ul class="sub">
+                            <li><a href="#">소장유물 안내</a></li>
+                            <li><a href="#">유물기증ㆍ기탁</a></li>
+                            <li><a href="#">소장 유물 열람</a></li>
+                        </ul>
+                    </li>
+                    <li class="top_menu">
+                        <a href="#">자료마당</a>
+                        <ul class="sub">
+                            <li><a href="#">대전의 역사</a></li>
+                            <li><a href="#">대전의 문화재</a></li>
+                            <li><a href="#">자료이용</a></li>
+                        </ul>
+                    </li>
+                    <li class="top_menu">
+                        <a href="#">열린공간</a>
+                        <ul class="sub">
+                            <li><a href="#">공지사항</a></li>
+                            <li><a href="#">보도자료</a></li>
+                            <li><a href="#">포토갤러리</a></li>
+                            <li><a href="#">질문과답변</a></li>
+                        </ul>
+                    </li>
+                    <li class="top_menu">
+                        <a href="#">박물관소개</a>
+                        <ul class="sub">
+                            <li><a href="#">인사말</a></li>
+                            <li><a href="#">연혁</a></li>
+                            <li><a href="#">조직도 및 직원안내</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </nav>
+            <button class="search"><i class="fa-solid fa-magnifying-glass"></i></button>
+            <button class="ham m_show open"><i class="fa-solid fa-bars-staggered"></i></button>
+            <button class="ham m_show close"><span class="f_small">닫기</span></button>
+        </header>
+        <section class="slide_con">
+            <ul class="slide">
+                <li>
+                    <div class="txt_box t_box1">
+                        <p class="f_thin">Daejeon Municipal Museum</p>
+                        <h2>대전시립박물관</h2>
+                        <p>대전의 역사와 문화를 사랑합니다</p>
+                    </div>
+                    <a href="#">
+                        <img src="./images/main_sl1.jpg" class="pc_show" alt="대전시립박물관 전경">
+                        <img src="./images/main_sl1_m.jpg" class="m_show" alt="대전시립박물관 전경">
+                    </a>
+                </li>
+                <li>
+                    <div class="txt_box t_box2">
+                        <p class="f_thin">Daejeon Municipal Museum</p>
+                        <h2>대전시립박물관 <strong>시설 개선</strong></h2>
+                        <p>역사전문도서실 조성 및 외부 계단형 휴식공간,<br>
+                            소규모 야외전시장으로 지역 주민들의 힐링공간으로 개선</p>
+                    </div>
+                    <a href="#">
+                        <img src="./images/main_sl2.jpg" class="pc_show" alt="대전시립박물관 외부 전경">
+                        <img src="./images/main_sl2_m.jpg" class="m_show" alt="대전시립박물관 외부 전경">
+                    </a>
+                </li>
+                <li>
+                    <div class="txt_box t_box3">
+                        <p class="f_thin">Daejeon Municipal Museum</p>
+                        <h2><span class="f_bold">작은 도서관</span> 개관</h2>
+                        <p>로비 휴게공간에 작은도서관 개관과 북카페 오픈으로<br>
+                            역사 관련 서가 및 박물관 발간자료 등 자유롭게 열람 가능</p>
+                    </div>
+                    <a href="#">
+                        <img src="./images/main_sl3.jpg" class="pc_show" alt="작은도서관 사진">
+                        <img src="./images/main_sl3_m.jpg" class="m_show" alt="작은도서관 사진">
+                    </a>
+                </li>
+            </ul>
+        </section>
+        <!-- .slide_con -->
+        <section class="sec2 inner">
+            <h2 class="sec_tit"><span class="f_bold">전시</span> 안내</h2>
+            <ul class="tab">
+                <li class="on"><a href="#">특별전시</a></li>
+                <li><a href="#">상설전시</a></li>
+                <li><a href="#">야외전시</a></li>
+                <li><a href="#">근현대사전시</a></li>
+            </ul>
+            <ul class="exhibi_list on">
+                <li>
+                    <p class="img_box"><img src="./images/exhibit_1.jpg" alt="전시 포스터"></p>
+                    <div class="txt_box">
+                        <p class="box_tit">진행중</p>
+                        <p class="c_lightgray ">2022년 세번째 박물관 속 작은 전시</p>
+                        <h3 class="f_bold">단오</h3>
+                        <p class="c_gray">
+                            전시기간: 2022.05.25 ~ 2022.06.28
+                            <br>전시장소: 상설전시장 내
+                        </p>
+                    </div>
+                </li>
+                <li>
+                    <p class="img_box"><img src="./images/exhibit_2.jpg" alt="전시 포스터"></p>
+                    <div class="txt_box">
+                        <p class="box_tit">진행중</p>
+                        <p class="c_lightgray ">2021년 대전시립박물관 어린이체험전</p>
+                        <h3 class="f_bold">산성을 지켜라! 꼬마장수!</h3>
+                        <p class="c_gray">
+                            전시기간: 2021.12.23 ~ 2022.06.26
+                            <br>전시장소: 대전시립박물관 B동 1층
+                        </p>
+                    </div>
+                </li>
+                <li>
+                    <p class="img_box"><img src="./images/exhibit_3.jpg" alt="전시 포스터"></p>
+                    <div class="txt_box">
+                        <p class="box_tit end">전시종료</p>
+                        <p class="c_lightgray ">2021 대전시립박물관 미디어특별전</p>
+                        <h3 class="f_bold">산수정원, 고산구곡</h3>
+                        <p class="c_gray">
+                            전시기간: 2021.12.31 ~ 2022.05.29
+                            <br>전시장소: 기획전시실2
+                        </p>
+                    </div>
+                </li>
+                <li>
+                    <p class="img_box"><img src="./images/exhibit_1.jpg" alt="전시 포스터"></p>
+                    <div class="txt_box">
+                        <p class="box_tit end">전시종료</p>
+                        <p class="c_lightgray ">2022년 세번째 박물관 속 작은 전시</p>
+                        <h3 class="f_bold">단오</h3>
+                        <p class="c_gray">
+                            전시기간: 2022.05.25 ~ 2022.06.28
+                            <br>전시장소: 상설전시장 내
+                        </p>
+                    </div>
+                </li>
+            </ul>
+            <ul class="exhibi_list">
+                <li>
+                    <p class="img_box"><img src="./images/exhibit_1.jpg" alt="전시 포스터"></p>
+                    <div class="txt_box">
+                        <p class="box_tit">2진행중</p>
+                        <p class="c_lightgray ">2022년 세번째 박물관 속 작은 전시</p>
+                        <h3 class="f_bold">단오</h3>
+                        <p class="c_gray">
+                            전시기간: 2022.05.25 ~ 2022.06.28
+                            <br>전시장소: 상설전시장 내
+                        </p>
+                    </div>
+                </li>
+                <li>
+                    <p class="img_box"><img src="./images/exhibit_2.jpg" alt="전시 포스터"></p>
+                    <div class="txt_box">
+                        <p class="box_tit">2진행중</p>
+                        <p class="c_lightgray ">2021년 대전시립박물관 어린이체험전</p>
+                        <h3 class="f_bold">산성을 지켜라! 꼬마장수!</h3>
+                        <p class="c_gray">
+                            전시기간: 2021.12.23 ~ 2022.06.26
+                            <br>전시장소: 대전시립박물관 B동 1층
+                        </p>
+                    </div>
+                </li>
+                <li>
+                    <p class="img_box"><img src="./images/exhibit_3.jpg" alt="전시 포스터"></p>
+                    <div class="txt_box">
+                        <p class="box_tit end">2전시종료</p>
+                        <p class="c_lightgray ">2021 대전시립박물관 미디어특별전</p>
+                        <h3 class="f_bold">산수정원, 고산구곡</h3>
+                        <p class="c_gray">
+                            전시기간: 2021.12.31 ~ 2022.05.29
+                            <br>전시장소: 기획전시실2
+                        </p>
+                    </div>
+                </li>
+            </ul>
+            <ul class="exhibi_list">
+                <li>
+                    <p class="img_box"><img src="./images/exhibit_1.jpg" alt="전시 포스터"></p>
+                    <div class="txt_box">
+                        <p class="box_tit">3진행중</p>
+                        <p class="c_lightgray ">2022년 세번째 박물관 속 작은 전시</p>
+                        <h3 class="f_bold">단오</h3>
+                        <p class="c_gray">
+                            전시기간: 2022.05.25 ~ 2022.06.28
+                            <br>전시장소: 상설전시장 내
+                        </p>
+                    </div>
+                </li>
+                <li>
+                    <p class="img_box"><img src="./images/exhibit_2.jpg" alt="전시 포스터"></p>
+                    <div class="txt_box">
+                        <p class="box_tit">3진행중</p>
+                        <p class="c_lightgray ">2021년 대전시립박물관 어린이체험전</p>
+                        <h3 class="f_bold">산성을 지켜라! 꼬마장수!</h3>
+                        <p class="c_gray">
+                            전시기간: 2021.12.23 ~ 2022.06.26
+                            <br>전시장소: 대전시립박물관 B동 1층
+                        </p>
+                    </div>
+                </li>
+                <li>
+                    <p class="img_box"><img src="./images/exhibit_3.jpg" alt="전시 포스터"></p>
+                    <div class="txt_box">
+                        <p class="box_tit end">3전시종료</p>
+                        <p class="c_lightgray ">2021 대전시립박물관 미디어특별전</p>
+                        <h3 class="f_bold">산수정원, 고산구곡</h3>
+                        <p class="c_gray">
+                            전시기간: 2021.12.31 ~ 2022.05.29
+                            <br>전시장소: 기획전시실2
+                        </p>
+                    </div>
+                </li>
+                <li>
+                    <p class="img_box"><img src="./images/exhibit_3.jpg" alt="전시 포스터"></p>
+                    <div class="txt_box">
+                        <p class="box_tit end">3전시종료</p>
+                        <p class="c_lightgray ">2021 대전시립박물관 미디어특별전</p>
+                        <h3 class="f_bold">산수정원, 고산구곡</h3>
+                        <p class="c_gray">
+                            전시기간: 2021.12.31 ~ 2022.05.29
+                            <br>전시장소: 기획전시실2
+                        </p>
+                    </div>
+                </li>
+            </ul>
+            <ul class="exhibi_list">
+                <li>
+                    <p class="img_box"><img src="./images/exhibit_1.jpg" alt="전시 포스터"></p>
+                    <div class="txt_box">
+                        <p class="box_tit">4진행중</p>
+                        <p class="c_lightgray ">2022년 세번째 박물관 속 작은 전시</p>
+                        <h3 class="f_bold">단오</h3>
+                        <p class="c_gray">
+                            전시기간: 2022.05.25 ~ 2022.06.28
+                            <br>전시장소: 상설전시장 내
+                        </p>
+                    </div>
+                </li>
+                <li>
+                    <p class="img_box"><img src="./images/exhibit_2.jpg" alt="전시 포스터"></p>
+                    <div class="txt_box">
+                        <p class="box_tit">4진행중</p>
+                        <p class="c_lightgray ">2021년 대전시립박물관 어린이체험전</p>
+                        <h3 class="f_bold">산성을 지켜라! 꼬마장수!</h3>
+                        <p class="c_gray">
+                            전시기간: 2021.12.23 ~ 2022.06.26
+                            <br>전시장소: 대전시립박물관 B동 1층
+                        </p>
+                    </div>
+                </li>
+                <li>
+                    <p class="img_box"><img src="./images/exhibit_3.jpg" alt="전시 포스터"></p>
+                    <div class="txt_box">
+                        <p class="box_tit end">4전시종료</p>
+                        <p class="c_lightgray ">2021 대전시립박물관 미디어특별전</p>
+                        <h3 class="f_bold">산수정원, 고산구곡</h3>
+                        <p class="c_gray">
+                            전시기간: 2021.12.31 ~ 2022.05.29
+                            <br>전시장소: 기획전시실2
+                        </p>
+                    </div>
+                </li>
+            </ul>
+            <a href="#" class="more">더 보기 <i class="fa-solid fa-angle-right"></i></a>
+        </section>
+        <!-- .sec2 -->
+        <section class="sec3 inner">
+            <h2 class="sec_tit"><span class="f_bold">관람</span> 안내</h2>
+            <div class="content_wrap">
+                <p class="img_box">
+                </p>
+                <div class="gradi_bg info_box">
+                    <ul>
+                        <li>
+                            <p>관람안내(하절기)</p>
+                            <h4>오전 10시 ~ 오후 7시</h4>
+                            <p class="f_small">관람종료시간 30분 전까지 입장가능
+                                <br><span class="f_bold">휴관일:</span> 매주 월요일, 신정, 설날, 추석</p>
+                        </li>
+                        <li>
+                            <p>관람 문의</p>
+                            <h4>042) 270-8600~13</h4>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="link_wrap">
+                <a href="#" class="info_link"><i class="fa-solid fa-circle-info"></i>
+                    <h5>관람안내</h5><span class="c_point"><i class="fa-solid fa-angle-right"></i></span>
+                </a>
+                <a href="#" class="info_link"><i class="fa-solid fa-location-arrow"></i>
+                    <h5>오시는 길</h5><span class="c_point"><i class="fa-solid fa-angle-right"></i></span>
+                </a>
+            </div>
+        </section>
+        <!-- .sec3 -->
+        <section class="sec4 inner">
+            <h2 class="sec_tit"><span class="f_bold">예약</span> 및 <span class="f_bold">신청</span></h2>
+            <ul class="apply_btn">
+                <li>
+                    <i class="fa-solid fa-people-roof"></i>
+                    <h5><strong>단체관람</strong> 예약</h5>
+                    <a href="#"></a>
+                </li>
+                <li>
+                    <i class="fa-solid fa-person-chalkboard"></i>
+                    <h5><strong>전시해설</strong> 예약</h5>
+                    <a href="#"></a>
+                </li>
+                <li>
+                    <i class="fa-solid fa-book-open"></i>
+                    <h5><strong>교육</strong> 신청</h5>
+                    <a href="#"></a>
+                </li>
+                <li>
+                    <i class="fa-solid fa-building-columns"></i>
+                    <h5><strong>대관</strong> 이용</h5>
+                    <a href="#"></a>
+                </li>
+            </ul>
+        </section>
+        <!-- .sec4 -->
+        <section class="sec5 inner">
+            <h2 class="sec_tit"><span class="f_bold">열린 </span>공간</h2>
+            <ul class="tab">
+                <li class="on"><a href="#">공지사항</a></li>
+                <li><a href="#">보도자료</a></li>
+                <li><a href="#">교육안내</a></li>
+                <li><a href="#">포토갤러리</a></li>
+            </ul>
+            <div class="board_list literary on">
+                <a href="#">
+                    <p>대전시립박물관의 공지사항입니다. <span class="date">2022.05.27</span></p>
+                </a>
+                <a href="#">
+                    <p>대전시립박물관의 공지사항입니다. <span class="date">2022.05.27</span></p>
+                </a>
+                <a href="#">
+                    <p>대전시립박물관의 공지사항입니다. <span class="date">2022.05.27</span></p>
+                </a>
+                <a href="#">
+                    <p>대전시립박물관의 공지사항입니다. <span class="date">2022.05.27</span></p>
+                </a>
+                <a href="#">
+                    <p>대전시립박물관의 공지사항입니다. <span class="date">2022.05.27</span></p>
+                </a>
+                <a href="#" class="more">더 보기 <i class="fa-solid fa-angle-right"></i></a>
+            </div>
+            <div class="board_list literary">
+                <a href="#">
+                    <p>대전시립박물관의 보도자료입니다. <span class="date">2022.05.27</span></p>
+                </a>
+                <a href="#">
+                    <p>대전시립박물관의 보도자료입니다. <span class="date">2022.05.27</span></p>
+                </a>
+                <a href="#">
+                    <p>대전시립박물관의 보도자료입니다. <span class="date">2022.05.27</span></p>
+                </a>
+                <a href="#">
+                    <p>대전시립박물관의 보도자료입니다. <span class="date">2022.05.27</span></p>
+                </a>
+                <a href="#">
+                    <p>대전시립박물관의 보도자료입니다. <span class="date">2022.05.27</span></p>
+                </a>
+                <a href="#" class="more">더 보기 <i class="fa-solid fa-angle-right"></i></a>
+            </div>
+            <div class="board_list literary">
+                <a href="#">
+                    <p>대전시립박물관의 교육안내입니다. <span class="date">2022.05.27</span></p>
+                </a>
+                <a href="#">
+                    <p>대전시립박물관의 교육안내입니다. <span class="date">2022.05.27</span></p>
+                </a>
+                <a href="#">
+                    <p>대전시립박물관의 교육안내입니다. <span class="date">2022.05.27</span></p>
+                </a>
+                <a href="#">
+                    <p>대전시립박물관의 교육안내입니다. <span class="date">2022.05.27</span></p>
+                </a>
+                <a href="#">
+                    <p>대전시립박물관의 교육안내입니다. <span class="date">2022.05.27</span></p>
+                </a>
+                <a href="#" class="more">더 보기 <i class="fa-solid fa-angle-right"></i></a>
+            </div>
+            <div class="board_list photo">
+                <div class="flex_wrap">
+                    <a href="#" class="tit">
+                        <img src="./images/photo_1.jpg" alt="포토갤러리">
+                        <p>하반기 전시 연계 가족교육 &lt;꿈을 담는 짜임&gt;</p>
+                    </a>
+                    <a href="#" class="tit">
+                        <img src="./images/photo_2.jpg" alt="포토갤러리">
+                        <p>가족체험 역사문화교실 &lt;12월 대전을 담다&gt;</p>
+                    </a>
+                    <a href="#" class="tit">
+                        <img src="./images/photo_3.jpg" alt="포토갤러리">
+                        <p>특별인문강연 &lt;박물관이 음악과 미술을 만날 때&gt;</p>
+                    </a>
+                    <a href="#" class="tit">
+                        <img src="./images/photo_4.jpg" alt="포토갤러리">
+                        <p>한국의 명가 V 창녕성씨 특별전 개막행사</p>
+                    </a>
+                </div>
+                <a href="#" class="more">더 보기 <i class="fa-solid fa-angle-right"></i></a>
+            </div>
+            <a href="#" class="gradi_bg vr_btn">
+                <i class="fa-solid fa-vr-cardboard"></i>
+                <div class="txt_wrap">
+                    <p>스마트 박물관</p>
+                    <h5 class="f_bold">360º VR 전시 관람하기</h5>
+                    <p class="f_small">대전시립박물관 상설전시를 360º VR로 체험해보세요!</p>
+                </div>
+            </a>
+        </section>
+        <!-- .sec5 -->
+        <ul class="btm_list">
+            <li><a href="#">소장 유물</a></li>
+            <li><a href="#">대전 역사</a></li>
+            <li><a href="#">대전 문화재</a></li>
+            <li><a href="#">자료 이용</a></li>
+        </ul>
+        <footer>
+            <div class="ft_link">
+                <a href="#">개인정보처리방침</a>
+                <a href="#">영상정보처리기기 운영ㆍ관리방침 홈페이지 </a>
+                <a href="#">개선의견</a>
+            </div>
+            <p class="txt_box">
+                (35242) 대전광역시 유성구 도안대로 398 / 대표전화 (042) 270-8600
+                <br>COPYRIGHT 2022 (c) DAEJEON METROPOLITAN CITY.
+                <br>ALL RIGHTS RESERVED.
+            </p>
+        </footer>
+    </div>
+
+
+
+</body>
+
+</html>
